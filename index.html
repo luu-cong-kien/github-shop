@@ -1,0 +1,1071 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kiên Fishing</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+    <link rel="stylesheet" href="./assets/css/main.css">
+    <link rel="stylesheet" href="./assets/css/base.css">
+    <link rel="stylesheet" href="./assets/fonts/fontawesome-free-6.1.0-web/fontawesome-free-6.1.0-web/css/all.min.css">
+</head>
+<body>
+    <div class="app">
+        <div class="body">
+            <header class="header">
+                <nav class="header__navbar">
+                        <ul class="header__navbar-list">
+                            <li class="header__navbar-item">
+                                <a href="" class="header__navbar-item-link ">Trang chủ</a>
+                            </li>
+                            <li class="header__navbar-item">
+                                <a href="" class="header__navbar-item-link">Giới thiệu</a>
+                            </li>
+                            <li class="header__navbar-item">
+                                <div class="header__navbar-item-list">
+                                    <a href="" class="header__navbar-item-link">Sản Phẩm 
+                                        <i class="fas fa-angle-down"></i>
+                                    </a>
+                                    <!-- <div class="header__navbar-item-list-product">
+                                        <div class="header__navbar-item-list-product-s1">
+                                            <a href="#" class="header__navbar-item-list-product-s1-list">Cần Câu Tay</a> 
+                                        </div>
+                                        <div class="header__navbar-item-list-product-s1">
+                                            <a href="" class="header__navbar-item-list-product-s1-list">Dây Câu | Lưỡi Câu</a>
+                                        </div>
+                                        <div class="header__navbar-item-list-product-s1">
+                                            <a href="" class="header__navbar-item-list-product-s1-list">Phao Câu</a>
+                                        </div>
+                                        <div class="header__navbar-item-list-product-s1">
+                                            <a href="" class="header__navbar-item-list-product-s1-list">Mồi Câu</a>
+                                        </div>
+                                        <div class="header__navbar-item-list-product-s1">
+                                            <a href="" class="header__navbar-item-list-product-s1-list">Thùng | Ghế Câu</a>
+                                        </div>
+                                        <div class="header__navbar-item-list-product-s1">
+                                            <a href="" class="header__navbar-item-list-product-s1-list">Vợt | Gác Cần | Rọng Cá</a>
+                                        </div>
+                                        <div class="header__navbar-item-list-product-s1">
+                                            <a href="" class="header__navbar-item-list-product-s1-list">Phụ Kiện</a>
+                                        </div>
+                                        <div class="header__navbar-item-list-product-s1">
+                                            <a href="" class="header__navbar-item-list-product-s1-list">Thời Trang</a>
+                                        </div>
+                                    </div>
+                                </div> -->
+                            </li>
+                            <li class="header__navbar-item">
+                                <a href="" class="header__navbar-item-link">Tin tức</a>
+                            </li>
+                            <li class="header__navbar-item">
+                                <a href="" class="header__navbar-item-link">Liên hệ</a>
+                            </li>
+                        </ul>
+                        
+                        <ul class="header__navbar-list">
+                            <!-- <li class="header__navbar-item">
+                                <a href="" class="header__navbar-item-link">Đăng ký</a>
+                                </li>
+                            <li class="header__navbar-item">
+                                <a href="" class="header__navbar-item-link header__navbar-icon-link ">
+                                    <i class="fa-solid fa-user"></i>
+                                    Đăng nhập
+                                </a>
+                            </li> -->
+                            <li class="header__navbar-item header__navbar-user">
+                                <img src="./assets/img/ảnh thẻ.jpg" alt="" class="header__navbar-user-img">
+                                <span class="header__navbar-user-name">Lưu Công Kiên</span>
+                                <ul class="header__navbar-user-menu">
+                                    <li class="header__navbar-user-item">
+                                        <a href="">Tài khoản của tôi</a>
+                                    </li>
+                                    <li class="header__navbar-user-item">
+                                        <a href="">Đơn hàng</a>
+                                    </li>
+                                    <li class="header__navbar-user-item">
+                                        <a href="">Địa chỉ</a>
+                                    </li>
+                                    <li class="header__navbar-user-item header__navbar-user-item-separate">
+                                        <a href="">Đăng xuất</a>
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                </nav>
+                <label for="nav__mobile-input" class="nav__bars-btn">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Pro 6.1.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. --><path d="M0 96C0 78.33 14.33 64 32 64H416C433.7 64 448 78.33 448 96C448 113.7 433.7 128 416 128H32C14.33 128 0 113.7 0 96zM0 256C0 238.3 14.33 224 32 224H416C433.7 224 448 238.3 448 256C448 273.7 433.7 288 416 288H32C14.33 288 0 273.7 0 256zM416 448H32C14.33 448 0 433.7 0 416C0 398.3 14.33 384 32 384H416C433.7 384 448 398.3 448 416C448 433.7 433.7 448 416 448z"/></svg>
+                </label>
+                <input type="checkbox" hidden class="nav__input" id="nav__mobile-input">
+                <label for="nav__mobile-input" class="nav__overlay">
+                </label>
+                <div class="nav__mobile">
+                    <label for="nav__mobile-input" class="nav__mobile-close">
+                        <i class="fa-solid fa-xmark"></i>
+                    </label>
+                    <ul class="nav__mobile-list">
+                        <li class="nav__mobile-item">
+                            <a href="" class="nav__mobile-item-link ">Trang chủ</a>
+                        </li>
+                        <li class="nav__mobile-item">
+                            <a href="" class="nav__mobile-item-link">Giới thiệu</a>
+                        </li>
+                        <li class="nav__mobile-item">
+                            <a href="" class="nav__mobile-item-link">Sản Phẩm </a>
+                        </li>
+                        <li class="nav__mobile-item">
+                            <a href="" class="nav__mobile-item-link">Tin tức</a>
+                        </li>
+                        <li class="nav__mobile-item">
+                            <a href="" class="nav__mobile-item-link">Liên hệ</a>
+                        </li>
+                        <li class="nav__mobile-item">
+                            <a href="" class="nav__mobile-item-link">Đăng nhập</a>
+                        </li>
+                        <li class="nav__mobile-item">
+                            <a href="" class="nav__mobile-item-link">Đăng ký</a>
+                        </li>
+                        <li class="nav__mobile-item">
+                            <a href="" class="nav__mobile-item-link">Về chúng tôi</a>
+                        </li>
+                        <li class="nav__mobile-item">
+                            <a href="" class="nav__mobile-item-link">Hỗ trợ khách hàng</a>
+                        </li>
+                    </ul>
+                </div>
+                    <!-- header-with-search -->
+                <div class="header-with-search">
+                        <div class="header__logo">
+                            <a href="" class="header__logo-link">
+                                <img class="header__logo-img" src="//bizweb.dktcdn.net/100/263/045/themes/596924/assets/logo.png?1645786049049">
+                            </a>
+                            </div>
+                        <div class="header__search">
+                            <div class="header__search--input-wrap">
+                                <input type="text" class="header__search-input" placeholder="Nhập tên sản phẩm bạn muốn tìm kiếm">
+                                <!--Seach history-->
+                                <div class="header__search-history">
+                                    <h3 class="header__search-history-heading">Lịch sử tìm kiếm</h3>
+                                    <ul class="header__search-history-list">
+                                        <li class="header__search-history-item">
+                                            <a href="">Cần câu tay</a>
+                                        </li>
+                                        <li class="header__search-history-item">
+                                            <a href="">Mồi câu</a>
+                                        </li>
+                                        <li class="header__search-history-item">
+                                            <a href="">Phao câu</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <button class="header__search-btn">
+                            <i class="header__search-btn-icon fa-solid fa-magnifying-glass"></i>
+                        </button>
+                        <div class="header__cart">
+                            <div class="header__cart-wrap">
+                                <i class="header__cart-icon fa-solid fa-cart-shopping"></i>
+                                <span class="header__cart-notice">3</span>
+                                <!-- No cart :header__cart-list--no-cart ko có sp -->
+                                <div class="header__cart-list" >
+                                    <img src="./assets/img/no-cart.png" alt="" class="header__cart-list--no-cart-img">
+                                    <span class="header__cart-list-messenger">Chưa có sản phẩm</span>
+                                    <h4 class="header__cart-heading">Sản phẩm đã thêm</h4>
+                                    <ul class="header__cart-list-item">
+                                        <!-- Cart item -->
+                                        <li class="header__cart-item">
+                                            <img style="min-width:40px;" src="./assets/img/Mcbadao.webp" alt="" class="header__cart-img">
+                                            <div class="header__cart-item-info">
+                                                <div class="header__cart-item-head">
+                                                    <h5 class="header__cart-item-name">CẦN CÂU TAY - MC PHỤC MA BÁ ĐẠO 6H TẢI TĨNH 8000G ĐỘ CỨNG 6H</h5>
+                                                    <span class="header__cart-item-price">1.250.000đ</span>
+                                                    <span class="header__cart-item-multiply">x</span>
+                                                    <span class="header__cart-item-quantity">1</span>
+                                                </div>
+                                                <div class="header__cart-item-body">
+                                                    <span class="header__cart-item-description">Phân loại : 4m5</span>
+                                                    <span class="header__cart-item-delete">Xóa</span>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li class="header__cart-item">
+                                            <img src="https://bizweb.dktcdn.net/thumb/large/100/431/326/products/sp6-0f433923-ad19-4db4-916a-53f7e876c978.jpg?v=1648809199723" alt="" class="header__cart-img">
+                                            <div class="header__cart-item-info">
+                                                <div class="header__cart-item-head">
+                                                    <h5 class="header__cart-item-name">Phao Lông Công Độ Nhạy Cao, Phao Lông Công Tăm To Săn Hàng Tiểu Phượng Hoàng 2022</h5>
+                                                    <span class="header__cart-item-price">200.000đ</span>
+                                                    <span class="header__cart-item-multiply">x</span>
+                                                    <span class="header__cart-item-quantity">1</span>
+                                                </div>
+                                                <div class="header__cart-item-body">
+                                                    <span class="header__cart-item-description">Phân loại : 4m5</span>
+                                                    <span class="header__cart-item-delete">Xóa</span>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        
+                                        <li class="header__cart-item">
+                                            <img src="https://bizweb.dktcdn.net/thumb/large/100/431/326/products/sp1-5ee61235-8ff3-4997-bcfe-829f6166547b.jpg?v=1647505333120" alt="" class="header__cart-img">
+                                            <div class="header__cart-item-info">
+                                                <div class="header__cart-item-head">
+                                                    <h5 class="header__cart-item-name">Ghế Câu Đài Địa Hình công thái học siêu chịu lực</h5>
+                                                    <span class="header__cart-item-price">2.590.000đ</span>
+                                                    <span class="header__cart-item-multiply">x</span>
+                                                    <span class="header__cart-item-quantity">1</span>
+                                                </div>
+                                                <div class="header__cart-item-body">
+                                                    <span class="header__cart-item-description">Phân loại : 4m5</span>
+                                                    <span class="header__cart-item-delete">Xóa</span>
+                                                </div>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                    <a href=" " class="header__cart-view btn btn--primary">Xem giỏ hàng</a>
+                                </div>
+                                
+                            </div>
+                            
+                        </div>
+                </div>
+            </header>
+        </div>
+        <div class="home-filter">
+            <span class="home-filter__label">Sắp xếp theo</span>
+            <div class="home-filter__btn-wrap">
+                <span class="home-filter__btn-label">
+                    Loại sản phẩm
+                    <i class="fas fa-angle-down"></i>
+                </span>
+                <ul class="home-filter__btn-list-product">
+                    <li class="home-filter__btn-product">
+                        <a href="" class="home-filter__btn-product-link">Cần Câu Tay</a>  
+                    </li>
+                    <li class="home-filter__btn-product">
+                        <a href="" class="home-filter__btn-product-link">Dây Câu | Lưỡi Câu</a>  
+                    </li>
+                    <li class="home-filter__btn-product">
+                        <a href="" class="home-filter__btn-product-link">Phao Câu Đài</a>  
+                    </li>
+                    <li class="home-filter__btn-product">
+                        <a href="" class="home-filter__btn-product-link">Mồi Câu</a>  
+                    </li>
+                    <li class="home-filter__btn-product">
+                        <a href="" class="home-filter__btn-product-link">Thùng | Ghế Câu</a>  
+                    </li>
+                    <li class="home-filter__btn-product">
+                        <a href="" class="home-filter__btn-product-link">Vợt | Gác Cần | Rọng Cá</a>  
+                    </li>
+                    <li class="home-filter__btn-product">
+                        <a href="" class="home-filter__btn-product-link">Phụ Kiện</a>  
+                    </li>
+                    <li class="home-filter__btn-product">
+                        <a href="" class="home-filter__btn-product-link">Thời Trang</a>  
+                    </li>
+                </ul>
+            </div>
+            <button class="home-filter__btn">Phổ biến</button>
+            <button class="home-filter__btn">Mới nhất</button>
+            <button class="home-filter__btn">Bán chạy</button>
+            <div class="select-input">
+                <span class="select-input__label">Giá</span>
+                <i class="fas fa-angle-down"></i>
+                <!-- List option -->
+                <ul class="select-input__list">
+                    <li class="select-input__item">
+                        <a href="" class="select-input__link">Giá : thấp đến cao</a>
+                    </li>
+                    <li class="select-input__item">
+                        <a href="" class="select-input__link">Giá : cao đến thấp</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="app__container">
+                
+            <a href="" class="app__container-name_a">Cần Câu Tay</a>
+            <div class="grid">
+                <div class="grid__row app__content">
+                    <div class="grid__column-2">
+                        <nav class="category">
+                            <h3 class="category__heading">Danh mục</h3>
+                            
+                            <ul class="category-list">
+                                <li class="category-item ">
+                                    <a href="#" class="category-item__link">
+                                        Cần Câu MC JIADIAONI</a>
+                                </li>
+                                <li class="category-item">
+                                    <a href="#" class="category-item__link">Cần Câu DONGAO</a>
+                                </li>
+                                <li class="category-item">
+                                    <a href="#" class="category-item__link">Cần Câu CHUNGWEI</a>
+                                </li>
+                                <li class="category-item">
+                                    <a href="#" class="category-item__link">Cần Câu MC FUJI</a>
+                                </li>
+                                <li class="category-item">
+                                    <a href="#" class="category-item__link">Cần Câu MC JINQUAN</a>
+                                </li>
+                            </ul>
+                        </nav>
+                    </div>
+                    <div class="grid__column-10">
+                        <div class="home-product">
+                            <div class="grid__row">
+                                <!-- PRODUCT ITEM -->
+                                <div class="grid__column-2-4">
+                                    <div class="home-product-item">
+                                        <a href="" class="home-product-item-name">
+                                        <img src="./assets/img/PMĐT.webp" alt=""> 
+                                        <h4>Cần Câu Đài, Cần Câu Tay MC Phục Ma Điển Tàng Thế Hệ 4-2022</h4>
+                                        <h5>1.080.000đ</h5>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="grid__column-2-4">
+                                    <div class="home-product-item">
+                                        <a href="" class="home-product-item-name">
+                                        <img src="https://bizweb.dktcdn.net/thumb/large/100/431/326/products/sp2-bf5be8ce-e36f-4a5d-9f45-2a67d3c023a7.jpg?v=1650437293927" alt=""> 
+                                        <h4>Cần Câu Đài, Cần Câu Tay Toàn Diện MC Đông Lai Hồ Khố</h4>
+                                        <h5>920.000đ</h5>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="grid__column-2-4">
+                                    <div class="home-product-item">
+                                        <a href="" class="home-product-item-name">
+                                        <img src="https://bizweb.dktcdn.net/thumb/large/100/431/326/products/sp1-939f1211-3e50-4b5c-adbc-96b0b0895611.jpg?v=1648544238397" alt=""> 
+                                        <h4>Cần Câu Đài, Cần Câu Carbon Chuangwei-WAY Model 2022 [Phân Phối Chính Hãng]</h4>
+                                        <h5>556.000đ</h5>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="grid__column-2-4">
+                                    <div class="home-product-item">
+                                        <a href="" class="home-product-item-name">
+                                        <img src="https://bizweb.dktcdn.net/thumb/large/100/431/326/products/sp5-2812d227-8d12-4d34-a450-2af280825a9b.jpg?v=1648450769030" alt=""> 
+                                        <h4>Cần Câu Đài Săn Hàng JINQUAN Khanh Quan Viêm Long Cự Vật Bản 5H Tải Tĩnh 5000G</h4>
+                                        <h5>1.720.000đ</h5>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="grid__column-2-4">
+                                    <div class="home-product-item">
+                                        <a href="" class="home-product-item-name">
+                                        <img src="https://bizweb.dktcdn.net/thumb/large/100/431/326/products/sp4-c3841c14-6bbb-4b83-a65a-397427337d11.jpg?v=1648022393273 " alt=""> 
+                                        <h4>Cần Câu Đài Săn Hàng JINQUAN Thái Thản (Phiên Bản Tổng Hợp) 2022</h4>
+                                        <h5>2.380.000đ</h5>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <a href="" class="app__container-name_a">Dây Câu | Lưỡi Câu</a>
+                <div class="grid__row app__content">
+                    <div class="grid__column-2">
+                        <nav class="category">
+                            <h3 class="category__heading">Danh mục</h3>
+                            <ul class="category-list">
+                                <li class="category-item ">
+                                    <a href="#" class="category-item__link">
+                                        Dây Trục </a>
+                                </li>
+                                <li class="category-item">
+                                    <a href="#" class="category-item__link">Dây Thẻo</a>
+                                </li>
+                                <li class="category-item">
+                                    <a href="#" class="category-item__link">Dây PE</a>
+                                </li>
+                                <li class="category-item">
+                                    <a href="#" class="category-item__link">Lưỡi Câu</a>
+                                </li>
+                                <li class="category-item">
+                                    <a href="#" class="category-item__link">Bộ Trục Làm Sẵn</a>
+                                </li>
+                            </ul>
+                        </nav>
+                    </div>
+                    <div class="grid__column-10">
+                        <div class="home-product">
+                            <div class="grid__row">
+                                <!-- PRODUCT ITEM -->
+                                <div class="grid__column-2-4">
+                                    <div class="home-product-item">
+                                        <a href="" class="home-product-item-name">
+                                        <img src="https://bizweb.dktcdn.net/thumb/large/100/431/326/products/sp1-41460f24-692d-4daf-82af-fbd1a1856600.jpg?v=1629309342600" alt=""> 
+                                        <h4>Dây Câu Cá, Trục Thẻo Câu Đài Săn Hàng ZHONGXI Bác Đại Vật</h4>
+                                        <h5>200.000đ</h5>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="grid__column-2-4">
+                                    <div class="home-product-item">
+                                        <a href="" class="home-product-item-name">
+                                        <img src="https://bizweb.dktcdn.net/thumb/1024x1024/100/382/482/products/27.jpg" alt=""> 
+                                        <h4>Dây Thẻo Vua Câu THIỀN 30m Siêu Tải Cá</h4>
+                                        <h5>100.000đ</h5>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="grid__column-2-4">
+                                    <div class="home-product-item">
+                                        <a href="" class="home-product-item-name">
+                                        <img src="https://bizweb.dktcdn.net/thumb/1024x1024/100/382/482/products/a-560413f9-9e55-476a-ad28-a51a65ff14e9.jpg" alt=""> 
+                                        <h4>Dây Dù PE X8+ Pitbull Shimano M51T 150m Mới</h4>
+                                        <h5>550.000đ</h5>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="grid__column-2-4">
+                                    <div class="home-product-item">
+                                        <a href="" class="home-product-item-name">
+                                        <img src="https://bizweb.dktcdn.net/thumb/large/100/431/326/products/sp1-f4316d03-fdc7-4b2a-b55d-dade7893fc75.jpg?v=1628695946657" alt=""> 
+                                        <h4>Lưỡi Câu Cá Săn Hàng Fish Person Xanh</h4>
+                                        <h5>30.000đ</h5>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="grid__column-2-4">
+                                    <div class="home-product-item">
+                                        <a href="" class="home-product-item-name">
+                                        <img src="https://bizweb.dktcdn.net/thumb/1024x1024/100/382/482/products/1-2c4a50f5-6956-4db2-ad0f-73bb32d91433.jpg" alt=""> 
+                                        <h4>Thẻo Sẵn Vua Câu Săn Hàng Siêu Tải Cá </h4>
+                                        <h5>50.000đ</h5>
+                                        </a>
+                                    </div>
+                                </div>
+                                
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <a href="" class="app__container-name_a">Phao Câu Đài</a>
+                <div class="grid__row app__content">
+                    <div class="grid__column-2">
+                        <nav class="category">
+                            <h3 class="category__heading">Danh mục</h3>
+                            <ul class="category-list">
+                                <li class="category-item ">
+                                    <a href="#" class="category-item__link">Phao Cỏ</a>
+                                </li>
+                                <li class="category-item">
+                                    <a href="#" class="category-item__link">Phao nano</a>
+                                </li>
+                                <li class="category-item">
+                                    <a href="#" class="category-item__link">Phao Lông Công</a>
+                                </li>
+                                <li class="category-item">
+                                    <a href="#" class="category-item__link">Phao Câu Đêm</a>
+                                </li>
+                                <li class="category-item">
+                                    <a href="#" class="category-item__link">Phao Hố Đấu</a>
+                                </li>
+                            </ul>
+                        </nav>
+                    </div>
+                    <div class="grid__column-10">
+                        <div class="home-product">
+                            <div class="grid__row">
+                                <!-- PRODUCT ITEM -->
+                                <div class="grid__column-2-4">
+                                    <div class="home-product-item">
+                                        <a href="" class="home-product-item-name">
+                                        <img src="https://bizweb.dktcdn.net/thumb/large/100/431/326/products/sp5-ff52b32b-7472-4487-8201-ec3dcb686f80.jpg?v=1647074103727" alt=""> 
+                                        <h4>Phao Cỏ Sơn Mài, Phao Cỏ Câu Đài Độ Nhạy Cao FUYI 2022</h4>
+                                        <h5>150.000đ</h5>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="grid__column-2-4">
+                                    <div class="home-product-item">
+                                        <a href="" class="home-product-item-name">
+                                        <img src="https://bizweb.dktcdn.net/thumb/large/100/431/326/products/sp6-26361985-8457-4a42-be7c-86067e94ed56.jpg?v=1647311344807" alt=""> 
+                                        <h4>Phao Carbon Độ Nhạy Cao, Phao Câu Đài Cao Cấp, Phao Câu Cá Siêu Bền FUYI</h4>
+                                        <h5>150.000đ</h5>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="grid__column-2-4">
+                                    <div class="home-product-item">
+                                        <a href="" class="home-product-item-name">
+                                        <img src="https://bizweb.dktcdn.net/thumb/large/100/431/326/products/sp1-af196562-7489-48b1-80c1-2bd0d6f24106.jpg?v=1627490448720" alt=""> 
+                                        <h4>Phao Lông Công Độ Nhạy Cao Tiểu Phượng Hoàng YK</h4>
+                                        <h5>200.000đ</h5>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="grid__column-2-4">
+                                    <div class="home-product-item">
+                                        <a href="" class="home-product-item-name">
+                                        <img src="https://bizweb.dktcdn.net/thumb/large/100/431/326/products/sp6-d80a6c7d-b49b-4718-9435-2c452ec7e8b4.jpg?v=1637928297780" alt=""> 
+                                        <h4>Phao Đèn Câu Ngày Và Đêm Độ Nhạy Cao Tiểu Phượng Hoàng</h4>
+                                        <h5>180.000đ</h5>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="grid__column-2-4">
+                                    <div class="home-product-item">
+                                        <a href="" class="home-product-item-name">
+                                        <img src="https://bizweb.dktcdn.net/thumb/large/100/431/326/products/sp6-26a0e44b-52e3-4389-926d-e756d7d38d2f.jpg?v=1647228987287" alt=""> 
+                                        <h4>Phao Hố Đấu Săn Hàng, Phao Hố Đấu Tự Cân Chì, Phao Câu Trắm Đen FUYI</h4>
+                                        <h5>120.000đ</h5>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <a href="" class="app__container-name_a">Mồi Câu</a>
+                <div class="grid__row app__content">
+                    <div class="grid__column-2">
+                        <nav class="category">
+                            <h3 class="category__heading">Danh mục</h3>
+                            <ul class="category-list">
+                                <li class="category-item ">
+                                    <a href="#" class="category-item__link">
+                                        Mồi Bột </a>
+                                </li>
+                                <li class="category-item">
+                                    <a href="#" class="category-item__link">Hương Liệu</a>
+                                </li>
+                                <li class="category-item">
+                                    <a href="#" class="category-item__link">Phụ gia</a>
+                                </li>
+                            </ul>
+                        </nav>
+                    </div>
+                    <div class="grid__column-10">
+                        <div class="home-product">
+                            <div class="grid__row">
+                                <!-- PRODUCT ITEM -->
+                                <div class="grid__column-2-4">
+                                    <div class="home-product-item">
+                                        <a href="" class="home-product-item-name">
+                                        <img src="https://bizweb.dktcdn.net/thumb/large/100/431/326/products/sp6-06e27c90-42cd-42e0-ab62-c48209b53278.jpg?v=1629194679650" alt=""> 
+                                        <h4>Mồi Câu Cá Chép Ốc Lão Quỷ - Loa Lý</h4>
+                                        <h5>65.000đ</h5>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="grid__column-2-4">
+                                    <div class="home-product-item">
+                                        <a href="" class="home-product-item-name">
+                                        <img src="https://bizweb.dktcdn.net/thumb/large/100/431/326/products/sp6-d6a7a212-d94f-4605-95fd-0aedab325ab4.jpg?v=1629187122777" alt=""> 
+                                        <h4>Mồi Câu Chép Lão Quỷ 918 - Đại Dã Chiến</h4>
+                                        <h5>50.000đ</h5>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="grid__column-2-4">
+                                    <div class="home-product-item">
+                                        <a href="" class="home-product-item-name">
+                                        <img src="https://bizweb.dktcdn.net/thumb/1024x1024/100/382/482/products/anh-vuong-8fa4c191-60df-4ae8-a84b-eb2818191fd1.jpg?v=1626853803630" alt=""> 
+                                        <h4>Hương Liệu Lão Quỷ - Trứng Sữa Siêu Nhạy</h4>
+                                        <h5>35.000đ</h5>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="grid__column-2-4">
+                                    <div class="home-product-item">
+                                        <a href="" class="home-product-item-name">
+                                        <img src="https://bizweb.dktcdn.net/thumb/1024x1024/100/382/482/products/5-2ae7c484-78b1-46dc-b03b-1d52d323fb18.jpg" alt=""> 
+                                        <h4>Hương Liệu Rô Phi Lão Quỷ Tương Đại Phúc Thọ</h4>
+                                        <h5>200.000đ</h5>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="grid__column-2-4">
+                                    <div class="home-product-item">
+                                        <a href="" class="home-product-item-name">
+                                        <img style="height: 227px;" src="https://salt.tikicdn.com/cache/200x200/ts/product/da/54/c2/3d72dab5fb80fa3b5f0aa168f2fd0dbc.jpg.webp" alt=""> 
+                                        <h4>Bột Tơ Nhện Câu Cá, Dùng Câu Mồi Vuốt Câu Đơn, Đài</h4>
+                                        <h5>50.000đ</h5>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <a href="" class="app__container-name_a">Thùng | Ghế Câu</a>
+                <div class="grid__row app__content">
+                    <div class="grid__column-2">
+                        <nav class="category">
+                            <h3 class="category__heading">Danh mục</h3>
+                            <ul class="category-list">
+                                <li class="category-item ">
+                                    <a href="#" class="category-item__link">
+                                        Thùng Câu</a>
+                                </li>
+                                <li class="category-item">
+                                    <a href="#" class="category-item__link">Thùng Kéo</a>
+                                </li>
+                                <li class="category-item">
+                                    <a href="#" class="category-item__link">Ghế Câu</a>
+                                </li>
+                                <li class="category-item">
+                                    <a href="#" class="category-item__link">Bàn Địa Hình</a>
+                                </li>
+                                <li class="category-item">
+                                    <a href="#" class="category-item__link">Phụ Kiện</a>
+                                </li>
+                            </ul>
+                        </nav>
+                    </div>
+                    <div class="grid__column-10">
+                        <div class="home-product">
+                            <div class="grid__row">
+                                <!-- PRODUCT ITEM -->
+                                <div class="grid__column-2-4">
+                                    <div class="home-product-item">
+                                        <a href="" class="home-product-item-name">
+                                        <img src="https://bizweb.dktcdn.net/thumb/large/100/431/326/products/sp5-2a200a82-28d6-44c0-bde0-94c5955894fc.jpg?v=1649845423243" alt=""> 
+                                        <h4>Thùng Câu Đài Siêu Nhẹ, Thùng Câu Cá, Hộp Câu Cá MC 2022</h4>
+                                        <h5>1.300.000đ</h5>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="grid__column-2-4">
+                                    <div class="home-product-item">
+                                        <a href="" class="home-product-item-name">
+                                        <img src="https://bizweb.dktcdn.net/thumb/1024x1024/100/382/482/products/vang-6daac5c2-ac44-4fe5-883a-4251430a1570.jpg?v=1651745845553" alt=""> 
+                                        <h4>Thùng câu Xsamtin 2900E Mẫu Mới 2022 </h4>
+                                        <h5>3.100.000đ</h5>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="grid__column-2-4">
+                                    <div class="home-product-item">
+                                        <a href="" class="home-product-item-name">
+                                        <img src="https://bizweb.dktcdn.net/thumb/1024x1024/100/382/482/products/1-8d6bb3ad-ebbf-442f-a1e3-6c63fd92867b.jpg?v=1633417198767" alt=""> 
+                                        <h4>Ghế Địa Hình Lianqiu Cao Cấp 2021 LQ-033</h4>
+                                        <h5>2.250.000đ</h5>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="grid__column-2-4">
+                                    <div class="home-product-item">
+                                        <a href="" class="home-product-item-name">
+                                        <img src="https://bizweb.dktcdn.net/thumb/1024x1024/100/382/482/products/img-6777.jpg" alt=""> 
+                                        <h4>Bàn Địa Hình Tag Fishing - Tổ Ong Chống Đọng Nước</h4>
+                                        <h5>2.750.000đ</h5>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="grid__column-2-4">
+                                    <div class="home-product-item">
+                                        <a href="" class="home-product-item-name">
+                                        <img src="https://bizweb.dktcdn.net/thumb/1024x1024/100/382/482/products/dsc3846.jpg?v=1621053210987" alt=""> 
+                                        <h4>Pat Đỡ Cần Mở Rộng Xsamtin Cao Cấp</h4>
+                                        <h5>610.000đ</h5>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <a href="" class="app__container-name_a">Vợt | Gác Cần | Rọng Cá</a>
+                <div class="grid__row app__content">
+                    <div class="grid__column-2">
+                        <nav class="category">
+                            <h3 class="category__heading">Danh mục</h3>
+                            <ul class="category-list">
+                                <li class="category-item ">
+                                    <a href="#" class="category-item__link">
+                                        Cán Vợt / Mặt Vợt</a>
+                                </li>
+                                <li class="category-item">
+                                    <a href="#" class="category-item__link">Gác Cần</a>
+                                </li>
+                                <li class="category-item">
+                                    <a href="#" class="category-item__link">Rọng Đựng Cá</a>
+                                </li>
+                                <li class="category-item">
+                                    <a href="#" class="category-item__link">Túi Đựng Cá</a>
+                                </li>
+                            </ul>
+                        </nav>
+                    </div>
+                    <div class="grid__column-10">
+                        <div class="home-product">
+                            <div class="grid__row">
+                                <!-- PRODUCT ITEM -->
+                                <div class="grid__column-2-4">
+                                    <div class="home-product-item">
+                                        <a href="" class="home-product-item-name">
+                                        <img src="https://bizweb.dktcdn.net/thumb/large/100/431/326/products/sp1-d1760030-8da0-4a05-9155-fa805276a1a0.jpg?v=1649328364000" alt=""> 
+                                        <h4>Cán Vợt Câu Đài Săn Hàng 3.0m Lão Ngư 2022</h4>
+                                        <h5>2.670.000đ</h5>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="grid__column-2-4">
+                                    <div class="home-product-item">
+                                        <a href="" class="home-product-item-name">
+                                        <img src="https://bizweb.dktcdn.net/thumb/large/100/431/326/products/sp1-f54700ad-6db6-4683-a304-66320fe130cb.jpg?v=1649491669317" alt=""> 
+                                        <h4>Mặt Vợt Câu Đài Săn Hàng Lão Ngư 2022</h4>
+                                        <h5>640.000đ</h5>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="grid__column-2-4">
+                                    <div class="home-product-item">
+                                        <a href="" class="home-product-item-name">
+                                        <img src="https://bizweb.dktcdn.net/thumb/large/100/431/326/products/sp5-e6cac5f7-2ac4-4310-a760-ecd8a48b05b8.jpg?v=1649129882837" alt=""> 
+                                        <h4>Gác Cần Săn Hàng, Gác Cần Câu Đài, Gác Cần MC Siêu Cứng</h4>
+                                        <h5>670.000đ</h5>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="grid__column-2-4">
+                                    <div class="home-product-item">
+                                        <a href="" class="home-product-item-name">
+                                        <img src="https://bizweb.dktcdn.net/thumb/large/100/431/326/products/sp2-9fe8018c-bdd1-4384-9f0c-83431e4b766e.jpg?v=1629788727907" alt=""> 
+                                        <h4>Rọng Đựng Cá, Rọng Cá Câu Đài Kiên Fishing</h4>
+                                        <h5>330.000đ</h5>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="grid__column-2-4">
+                                    <div class="home-product-item">
+                                        <a href="" class="home-product-item-name">
+                                        <img src="https://bizweb.dktcdn.net/thumb/large/100/431/326/products/p8.jpg?v=1630143533173" alt=""> 
+                                        <h4>Túi Đựng Cá, Thùng Đựng Cá, Hộp Câu Cá Đa Năng Tiểu Phượng Hoàng</h4>
+                                        <h5>120.000đ</h5>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <a href="" class="app__container-name_a">Phụ Kiện Câu Đài</a>
+                <div class="grid__row app__content">
+                    <div class="grid__column-2">
+                        <nav class="category">
+                            <h3 class="category__heading">Danh mục</h3>
+                            <ul class="category-list">
+                                <li class="category-item ">
+                                    <a href="#" class="category-item__link">
+                                        Bao Đựng Cần</a>
+                                </li>
+                                <li class="category-item">
+                                    <a href="#" class="category-item__link">Ô / Dù Câu</a>
+                                </li>
+                                <li class="category-item">
+                                    <a href="#" class="category-item__link">Hộp Phao / Thẻo / Trục</a>
+                                </li>
+                                <li class="category-item">
+                                    <a href="#" class="category-item__link">Đèn Câu / Gỡ Cá / Cân</a>
+                                </li>
+                                <li class="category-item">
+                                    <a href="#" class="category-item__link">Mani / Hạt Chặn / Phụ Kiện Khác</a>
+                                </li>
+                            </ul>
+                        </nav>
+                    </div>
+                    <div class="grid__column-10">
+                        <div class="home-product">
+                            <div class="grid__row">
+                                <!-- PRODUCT ITEM -->
+                                <div class="grid__column-2-4">
+                                    <div class="home-product-item">
+                                        <a href="" class="home-product-item-name">
+                                        <img src="https://bizweb.dktcdn.net/thumb/large/100/431/326/products/sp7-a8058c96-f8aa-4f2b-8fc0-bd61bf5bf9b9.jpg?v=1629737384930" alt=""> 
+                                        <h4>Bao đựng Cần Chống Nước, Bao Đựng Cần Câu Đài Dung Tích Lớn MC</h4>
+                                        <h5>750.000đ</h5>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="grid__column-2-4">
+                                    <div class="home-product-item">
+                                        <a href="" class="home-product-item-name">
+                                        <img src="https://bizweb.dktcdn.net/thumb/large/100/431/326/products/sp10-7a35aa1e-5090-4e91-9a7b-0c9228c8ca28.jpg?v=1632670618337" alt=""> 
+                                        <h4>Ô Câu Cá, Ô Che Nắng, Ô 2 Tầng Cao Cấp MC</h4>
+                                        <h5>850.000đ</h5>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="grid__column-2-4">
+                                    <div class="home-product-item">
+                                        <a href="" class="home-product-item-name">
+                                        <img src="https://bizweb.dktcdn.net/thumb/large/100/431/326/products/sp6-e4bb5722-ebfc-472e-92ee-2401ead68790.jpg?v=1635294549153" alt=""> 
+                                        <h4>Hộp Đựng Phao Câu Đài, Hộp Đựng Phao Câu Cá Cao Cấp Tiểu Phượng Hoàng</h4>
+                                        <h5>200.000đ</h5>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="grid__column-2-4">
+                                    <div class="home-product-item">
+                                        <a href="" class="home-product-item-name">
+                                        <img src="https://bizweb.dktcdn.net/thumb/large/100/431/326/products/vang.jpg?v=1627656884277" alt=""> 
+                                        <h4>Đèn Kẹp Mũ Cảm Biến Câu Cá Cao Cấp M7</h4>
+                                        <h5>150.000đ</h5>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="grid__column-2-4">
+                                    <div class="home-product-item">
+                                        <a href="" class="home-product-item-name">
+                                        <img src="https://bizweb.dktcdn.net/thumb/large/100/431/326/products/sp6-20b84252-000a-4a9b-af26-7b748b56769f.jpg?v=1635306963720" alt=""> 
+                                        <h4>Dây Bảo Hiểm Lò Xo Co Giãn, Dây Bảo Hiểm Cần Câu Đài MC</h4>
+                                        <h5>30.000đ</h5>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <a href="" class="app__container-name_a">Thời Trang</a>
+                <div class="grid__row app__content">
+                    <div class="grid__column-2">
+                        <nav class="category">
+                            <h3 class="category__heading">Danh mục</h3>
+                            <ul class="category-list">
+                                <li class="category-item ">
+                                    <a href="#" class="category-item__link">
+                                        Quần / Áo Chống Nắng</a>
+                                </li>
+                                <li class="category-item">
+                                    <a href="#" class="category-item__link">Mũ / Kính</a>
+                                </li>
+                                <li class="category-item">
+                                    <a href="#" class="category-item__link">Giày / Găng Tay Khăn</a>
+                                </li>
+                            </ul>
+                        </nav>
+                    </div>
+                    <div class="grid__column-10">
+                        <div class="home-product">
+                            <div class="grid__row">
+                                <!-- PRODUCT ITEM -->
+                                <div class="grid__column-2-4">
+                                    <div class="home-product-item">
+                                        <a href="" class="home-product-item-name">
+                                        <img src="https://bizweb.dktcdn.net/thumb/large/100/431/326/products/sp9-b6809027-b0c6-4b53-a537-7ec9c453f141.jpg?v=1629280501800" alt=""> 
+                                        <h4>Bộ Quần Áo Thể Thao, Quần Áo Câu Cá, Chống Nắng MC</h4>
+                                        <h5>250.000đ</h5>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="grid__column-2-4">
+                                    <div class="home-product-item">
+                                        <a href="" class="home-product-item-name">
+                                        <img src="https://bizweb.dktcdn.net/thumb/1024x1024/100/382/482/products/1-9751c840-2b16-430a-9b75-3fedac12f94c.jpg" alt=""> 
+                                        <h4>Áo Chống Nắng Vua Câu - Ngắn Tay Chất Lượng Cao</h4>
+                                        <h5>400.000đ</h5>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="grid__column-2-4">
+                                    <div class="home-product-item">
+                                        <a href="" class="home-product-item-name">
+                                        <img style="height: 227px;" src="https://bizweb.dktcdn.net/thumb/1024x1024/100/382/482/products/1-e5e25626-4d2d-4111-a870-e0d39991c466.jpg?v=1654053029460" alt=""> 
+                                        <h4>Mũ Che Nắng Guide 2022 Màu Đen Lưới Thoáng</h4>
+                                        <h5>200.000đ</h5>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="grid__column-2-4">
+                                    <div class="home-product-item">
+                                        <a href="" class="home-product-item-name">
+                                        <img src="https://bizweb.dktcdn.net/thumb/1024x1024/100/382/482/products/8-9d9fc07b054e4b60896bd4c215722ce7.jpg?v=1595641882967" alt=""> 
+                                        <h4>Kính Câu Cá Gama Seiko Phân Cực Chống Lóa Mắt</h4>
+                                        <h5>400.000đ</h5>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="grid__column-2-4">
+                                    <div class="home-product-item">
+                                        <a href="" class="home-product-item-name">
+                                        <img src="https://bizweb.dktcdn.net/thumb/1024x1024/100/382/482/products/20190801-105344-fd7a0beaf72740449235df55b9360224-large.jpg" alt=""> 
+                                        <h4>Găng Tay Câu Cá Chống Trơn Tuột Tay </h4>
+                                        <h5>30.000đ</h5>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+        
+        <div class="footer">
+            <div class="footer__head">
+                <div class="footer__head-column">
+                    <div class="footer__head-column-1-1">
+                       <h3 class="footer__heading">KIÊN FISHING</h3> 
+                       <div class="footer__heading-name"> KIÊN FISHING là một trong những nhà phân phối đồ câu cá các thương hiệu đồ câu đài của các hãng MC JIADIAONI, DONGDAO, Tiểu Phượng Hoàng, Chuangwei.
+                            Với phương châm " Chất lượng là đầu tiên-Khách hàng là trên hết" Sẽ đáp ứng mọi nhu cầu về Sở thích câu cá, đồ câu, phụ kiện câu.</div>
+                    </div>
+                    <div class="footer__head-column-1">
+                        <h3 class="footer__heading">Liên hệ 24/7</h3> 
+                        <ul class="footer-list">
+                            <li class="footer-list-item">
+                                <a href="" class="footer-list-item-link">SĐT 0326777817</a>
+                            </li>
+                            <li class="footer-list-item">
+                                <a href="" class="footer-list-item-link">Kết nối mạng xã hội
+                                </a>
+                                <br>
+                                <a href="" class="footer-list-item-link">
+                                    <i class="fa-brands fa-facebook"></i>
+                                    Facebook
+                                </a>
+                                <br>
+                                <a href="" class="footer-list-item-link">
+                                    <i class="fa-brands fa-youtube"></i>
+                                    Youtube
+                                </a>
+                                <br>
+                                <a href="" class="footer-list-item-link">
+                                    <i class="fa-brands fa-instagram"></i>
+                                    Instagram
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="footer__head-column-1">
+                        <h3 class="footer__heading">Liên kết</h3> 
+                        <ul class="footer-list">
+                            <li class="footer-list-item">
+                                <a href="" class="footer-list-item-link">TRANG CHỦ</a>
+                            </li>
+                            <li class="footer-list-item">
+                                <a href="" class="footer-list-item-link">GIỚI THIỆU</a>
+                            </li>
+                            <li class="footer-list-item">
+                                <a href="" class="footer-list-item-link">SẢN PHẨM</a>
+                            </li>
+                            <li class="footer-list-item">
+                                <a href="" class="footer-list-item-link">TIN TỨC</a>
+                            </li>
+                            <li class="footer-list-item">
+                                <a href="" class="footer-list-item-link">LIÊN HỆ</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="footer__head-column-1-2">
+                        <h3 class="footer__heading">Về chúng tôi</h3>
+                        <ul class="footer-list">
+                            <li class="footer-list-item">
+                                <a href="" class="footer-list-item-link">ĐỐI TÁC - NHÀ CUNG CẤP</a>
+                            </li>
+                            <li class="footer-list-item">
+                                <a href="" class="footer-list-item-link">CHÍNH SÁCH ĐẠI LÝ</a>
+                            </li>
+                        </ul> 
+                    </div>
+                    <div class="footer__head-column-1-3">
+                        <h3 class="footer__heading">Hỗ trợ khách hàng</h3> 
+                        <ul class="footer-list">
+                            <li class="footer-list-item">
+                                <a href="" class="footer-list-item-link">HƯỚNG DẪN ĐẶT HÀNG</a>
+                            </li>
+                            <li class="footer-list-item">
+                                <a href="" class="footer-list-item-link">VẬN CHUYỂN - THANH TOÁN</a>
+                            </li>
+                            <li class="footer-list-item">
+                                <a href="" class="footer-list-item-link">CHÍNH SÁCH ĐỔI TRẢ - BẢO HÀNH</a>
+                            </li>
+                        </ul> 
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    
+        </div>
+        <!-- Modal  -->
+        <!-- <div class="modal">
+            <div class="modal__overlay"></div>
+            <div class="modal__body"> -->
+                <!-- Register form -->
+                <!-- <div class="auth-form">
+                    <div class="auth-form__container">
+                        <div class="auth-form_header">
+                            <h3 class="auth-form_heading">Đăng ký</h3>
+                            <span class="auth-form_switch-btn">Đăng nhập</span>
+                        </div>
+                        <div class="auth-form__form">
+                            <div class="auth-form__group">
+                                <input type="text" class="auth-form__input" placeholder="Họ & Tên của bạn">
+                            </div>
+                            <div class="auth-form__group">
+                                    <input type="text" class="auth-form__input" placeholder="Email của bạn">
+                            </div>
+                            <div class="auth-form__group">
+                                    <input type="password" class="auth-form__input" placeholder="Mật khẩu của bạn">
+                            </div>
+                            <div class="auth-form__group">
+                                    <input type="password" class="auth-form__input" placeholder="Nhập lại mật khẩu của bạn">
+                            </div>
+                            <div class="auth-form__controls">
+                                <button class="btn auth-form__controls-back">Trở lại</button>
+                                <button class="btn btn__pri">Đăng ký</button>  
+                            </div>
+                        </div>    
+                        <div class="auth-form__socials">
+                                <a href="" class=" btn btn--size-s btn--with-icon auth-form__socials-face">
+                                    <i class="auth-form__socials-icon fa-brands fa-facebook"></i>
+                                    Kết nối với facebook
+                                </a>
+                                <a href="" class=" btn btn--size-s btn--with-icon auth-form__socials-gg">
+                                    <i class="auth-form__socials-icon fa-brands fa-google"></i>
+                                    Kết nối với Google
+                                </a>
+                         </div>
+                    </div>
+                </div> -->
+                <!-- login form -->
+                <!-- <div class="auth-form">
+                    <div class="auth-form__container">
+                        <div class="auth-form_header">
+                            <h3 class="auth-form_heading">Đăng nhập</h3>
+                            <span class="auth-form_switch-btn">Đăng ký</span>
+                        </div>
+                        <div class="auth-form__form">
+                            <div class="auth-form__group">
+                                    <input type="text" class="auth-form__input" placeholder="Email của bạn">
+                            </div>
+                            <div class="auth-form__group">
+                                    <input type="password" class="auth-form__input" placeholder="Mật khẩu của bạn">
+                            </div>
+                            <div class="auth-form__aside">
+                                <div class="auth-form__help">
+                                    <a href="" class="auth-form__help-link auth-form__help-space">Quên mật khẩu</a>
+                                    <a href="" class="auth-form__help-link">Trợ giúp ?</a>
+                                </div>
+                            </div>
+                            <div class="auth-form__controls">
+                                <button class="btn auth-form__controls-back">Trở lại</button>
+                                <button class="btn btn__pri">Đăng nhập</button>  
+                            </div>
+                        </div>    
+                        <div class="auth-form__socials">
+                                <a href="" class=" btn btn--size-s btn--with-icon auth-form__socials-face">
+                                    <i class="auth-form__socials-icon fa-brands fa-facebook"></i>
+                                    <span class="auth-form__socials-title">Đăng nhập với Facebook</span>
+                                    
+                                </a>
+                                <a href="" class=" btn btn--size-s btn--with-icon auth-form__socials-gg">
+                                    <i class="auth-form__socials-icon fa-brands fa-google"></i>
+                                    <span class="auth-form__socials-title">Đăng nhập với Google</span>
+                                </a>
+                         </div>
+                    </div>
+                </div> -->
+            <!-- </div>
+        </div>     -->
+    </div>
+    
+    </body>
+</html>
