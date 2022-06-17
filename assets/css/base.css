@@ -1,0 +1,322 @@
+:root{
+    --primary-color:#EE4D2D;
+    --white-color:#fff;
+    --black-color:#000;
+    --text-color:#333;
+    --border-color:#dbdbdb;
+    --header-height:150px;
+    --navbar-height:60px;
+    --header-with-search-height: calc(var(--header-height) - var(--navbar-height))
+}
+*{  margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    box-sizing: inherit;
+
+}
+html{
+    margin: 0 auto;
+    font-size: 62.5%;
+    line-height: 1.4rem;
+    font-family: 'exo', sans-serif;
+    background-color: var(--white-color);
+
+}
+/* Responsive */
+.grid{
+    /* display: flex;
+    flex-wrap: wrap; */
+    max-width: 1400px;
+    margin: 0 aut0;
+}
+.grid__row{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.grid__row img{
+    max-width: 227px;
+}
+.grid__column-2{
+    width: 15%;
+}
+.grid__column-2-4{
+    min-width: 227px;
+    width: 15.10%;
+}
+.grid__column-10{
+    width: 83.9%;
+}
+.row{
+    display: flex;
+    flex-wrap: wrap;
+}
+@keyframes fadeIn{
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
+}
+@keyframes growth{
+    from{
+        transform: scale(var(--growth-from));
+    }
+    to{
+        transform: scale(var(--growth-to));
+    }
+}
+
+
+/* Modal*/
+.modal{
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    display:flex ;
+    animation: fadeIn linear 0.1s;
+    /* animation aarn hiện trang đăng ký */
+}
+
+.modal__overlay{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.4);
+}
+.modal__body{
+    --growth-from:0.7s;
+    --growth-to:1s;
+    width:500px ;
+    height: 400px;
+    margin: auto;
+    position: relative;
+    z-index: 3;
+    border-radius: 5px;
+    animation: growth linear 0.1s;
+}
+.auth-form__socials{
+    margin-top: 40px;
+    background-color: #f5f5f5;
+    padding: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.btn{
+    min-width: 142px;
+    height: 36px;
+    text-decoration: none;
+    border: none;
+    border-radius: 2px;
+    font-size: 1.4rem;
+    padding: 0;
+    cursor: pointer;
+    /* di chuột thành bàn tay */
+    /* color: var(--text-color); */
+    display:inline-flex;
+    align-items: center;
+    justify-content: center;
+
+}
+.btn.btn--size-s{
+    height: 30px;
+    font-size: 12px;
+    padding: 5px;
+    
+}
+/* .btn:hover{
+    color: white;
+    background-color:#3A5A98;
+} */
+.btn.btn__pri{
+    color:var(--white-color) ;
+    background-color:#1587e8;
+    
+}
+.btn.btn--with-icon{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+
+/* Selecttion */
+.select-input{
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0px 12px  ;
+    border: 3px;
+    min-width: 120px;
+    height: 30px;
+    border-radius: 2px;
+    background-color:white;
+    z-index: 1;
+}
+.select-input:hover .select-input__list{
+    display: block;
+}
+.select-input__list{
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 30px;
+    border-radius: 2px;
+    background-color: white;
+    list-style: none;
+    padding: 2px 0px 2px 0;
+    margin: 0;
+    display: none;
+}
+.select-input__link{
+    font-weight: 400;
+    font-size: 1.4rem;
+    text-decoration: none;
+    color: var(--text-color);
+    display: block;
+    padding: 6px 10px;
+    margin: 0px;
+}
+.select-input__link:hover{
+    color: var(--primary-color);
+    background-color:rgb(240, 240, 240) ;
+}
+/* Mobile width < 740px */
+@media only screen and (max-width: 46.1875em) {
+    .header__logo{
+        width: 100px;
+        height: 100px;
+    }
+    .header__logo-img{
+        width: 100px;
+        height: 100px;
+    }
+    .header__cart{
+        width: 100px;
+    }
+    .category{
+        display: none;
+    }
+    .grid{
+        max-width: 739px;
+    }
+    .app__container {
+        max-width: 739px;
+    }
+    .grid__column-10{
+        width:100%;
+    }
+    .grid__column-2{
+        display: none;
+    }
+    .grid__column-2-4{
+        width: 100%;
+        flex-direction: column;
+    }
+    .app__container-name_a{
+        font-size: 2.2rem;
+        width: 50%;
+    }
+    .header__navbar{
+        display: none;
+    }
+
+    .nav__bars-btn{
+        display: block;
+    }
+    .app__content{
+        border: none;
+    }
+    .home-filter{
+        margin: 0 10px;
+        max-width: 739px;
+    }
+    .home-filter__btn{
+        display: none;
+    }
+    .header__search-history{
+        top: 100px;
+        left: 101px;
+    }
+    .app__container-name_a{
+        margin: 10px auto;
+    }
+    .header__cart-list{
+        max-width: 336px;
+    }
+    
+    .header__cart-item-name{
+        max-width: 200px;
+    }
+    .footer{
+        height: px;
+    }
+    .footer__head-column{
+        flex-direction: column;
+        text-align: center;
+    }
+    .footer__head-column-1-2{
+        margin-top: 10px;
+    }
+    .footer__head-column-1-3{
+        margin-top: 10px;
+    }
+    
+}
+/* Tablet width >= 740px and width < 1024px*/
+@media only screen and (min-width: 46.25em) and (max-width:63.9375em){
+    .header__navbar{
+        display: none;
+    }
+    .grid{
+        min-width: 740px;
+        max-width: 1023px;
+    }
+    .grid__column-10{
+        width:100%;
+    }
+    .grid__column-2-4{
+        width: 30%;
+        flex-direction: column;
+    }
+    .grid__column-2{
+        display: none;
+    }
+    .nav__bars-btn{
+        display: block;
+    }
+    .home-filter{
+        margin: 0 10px;
+    }
+    .home-filter__btn-label{
+        max-width: 150px;
+    }
+    .header__search-history{
+        top: 100px;
+    }
+    .footer__head-column{
+        flex-direction: column;
+        text-align: center;
+    }
+    .footer__head-column-1-2{
+        margin-top: 10px;
+    }
+    .footer__head-column-1-3{
+        margin-top: 10px;
+    }
+}
+/* @media only screen and (min-width: 64em){
+    .grid__column-10{
+        width:80%;
+    }
+    .grid__column-2-4{
+        width: 40%;
+        flex-direction: column;
+    }
+} */
