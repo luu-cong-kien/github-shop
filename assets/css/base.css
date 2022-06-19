@@ -18,7 +18,7 @@ html{
     margin: 0 auto;
     font-size: 62.5%;
     line-height: 1.4rem;
-    font-family: 'exo', sans-serif;
+    font-family: 'Exo', sans-serif;
     background-color: var(--white-color);
 
 }
@@ -39,6 +39,7 @@ html{
 }
 .grid__column-2{
     width: 15%;
+    margin-left:4px
 }
 .grid__column-2-4{
     min-width: 227px;
@@ -47,9 +48,78 @@ html{
 .grid__column-10{
     width: 83.9%;
 }
-.row{
+
+.grid_all-product{
+    max-width: 1400px;
+    margin: 0 auto;
+    
+}
+.grid__column-12{
+    width: 100%;
+    flex-direction: row;
+    
+}
+
+.grid__row-all-12{
     display: flex;
     flex-wrap: wrap;
+    justify-content: space-around;
+}
+.grid__column-all-12{
+    /* width: 20%; */
+    margin: 0 3px;
+    width: 227px;
+    margin-top: 2px;
+}
+.home-all-product{
+    margin-top: 5px;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+}
+.home-all-product-item:hover{
+    transform: translateY(3px);
+    box-shadow: 0 1px 20px 0 rgba(0,0,0,0.05);
+}
+/* hover vào sản phẩm thì dịch xuống 3px */
+.home-all-product-item h4,
+.home-all-product-item h5{
+    margin: 2px auto;
+    /* Khi số từ vượt quá số dòng tự động thu gọn */
+    overflow: hidden;
+    display: block;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+    text-overflow: ellipsis;
+
+}
+.home-all-product-item img{
+    width: 222px;
+    /* max-height: 227px; */
+}
+.home-all-product-item{
+    margin: 0 0 0 4px;
+    width: 222px;
+    text-align: center;
+    /* hover vào sản phẩm thì dịch xuống 3px */
+    box-shadow: 0 1px 2px 0 rgba(0,0,0,0.1);
+    transition: transform linear 0.1s;
+    will-change: transforn;
+}
+.home-all-product-item h4:hover{
+    color: #EE4D2D;
+}
+.home-all-product-item h5:hover{
+    color: #EE4D2D;
+}
+.home-all-product-item-name{
+    font-size: 1.3rem;
+    text-align: center;
+    color: var(--text-color);
+    text-decoration: none;
 }
 @keyframes fadeIn{
     from{
@@ -79,6 +149,7 @@ html{
     display:flex ;
     animation: fadeIn linear 0.1s;
     /* animation aarn hiện trang đăng ký */
+    z-index: 4;
 }
 
 .modal__overlay{
@@ -88,9 +159,10 @@ html{
     background-color: rgba(0,0,0,0.4);
 }
 .modal__body{
+    /* position: absolute; */
     --growth-from:0.7s;
     --growth-to:1s;
-    width:500px ;
+    width:600px ;
     height: 400px;
     margin: auto;
     position: relative;
@@ -99,9 +171,10 @@ html{
     animation: growth linear 0.1s;
 }
 .auth-form__socials{
-    margin-top: 40px;
+    height: 30px;
+    margin-top: 30px;
     background-color: #f5f5f5;
-    padding: 5px;
+    padding: 10px;
     display: flex;
     align-items: center;
     justify-content: space-between;

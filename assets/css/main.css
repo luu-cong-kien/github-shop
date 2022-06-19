@@ -145,6 +145,8 @@
 
 /* authen modal */
 .auth-form_header{
+    margin-top: 20px;
+    height: 30px;
     display: flex;
     /* nằm lên ngang */
     align-items: center;
@@ -152,13 +154,17 @@
     justify-content: space-between;
     /* đẩy cách xa nhau */
 }
-.auth-form{
-    width: 500px;
+.authform{
+    position: absolute;
+    width: 100%;
+    /* width: 500px; */
     background-color:white;
     border-radius: 5px;
 }
 .auth-form__container{
+    position: relative;
     padding: 0 26px;
+    /* height: 400px; */
 }
 .auth-form_heading{
     font-size: 2.2rem;
@@ -172,12 +178,12 @@
     color: rgba(62, 19, 219, 0.7);
 }
 .auth-form__group{
+    padding-top: 20px;
     border-radius: 2px;
 }
 .auth-form__input{
-    height: 40px;
+    height: 30px;
     width: 98%;
-    margin:5px;
     padding: 0;
     font-size: 1.5rem;
     /* outline: none; */
@@ -222,6 +228,10 @@
 .auth-form__help-space{
     margin-right: 20px;
     color: rgba(62, 19, 219, 0.7);;
+}
+.form-label{
+    font-size: 1.4rem;
+    font-weight: 500;
 }
 /* Header with search */
 .header-with-search{
